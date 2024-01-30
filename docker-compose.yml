@@ -1,0 +1,19 @@
+version: '3.9'
+
+services:
+  node:
+    build:
+      context: .
+      target: node
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/usr/src/app
+
+  alpine:
+    build:
+      context: .
+      target: alpine
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+    
