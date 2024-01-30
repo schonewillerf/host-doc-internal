@@ -10,4 +10,6 @@ curl localhost:3000
 
 # confirm from a docker image it works
 dcr alpine curl host.docker.internal:3000
+dcr alpine curl foo:3000
+dcr alpine curl bar:3000
 ```

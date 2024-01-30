@@ -16,4 +16,6 @@ services:
       target: alpine
     extra_hosts:
       - 'host.docker.internal:host-gateway'
+      - 'foo:172.17.0.1'
+      - 'bar:host-gateway'
     
